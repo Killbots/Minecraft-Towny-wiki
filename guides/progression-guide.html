@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Skill progression and enchantment systems on ModernMC."><title>Skills &amp; Enchanting | ModernMC</title><link rel="ICON" href="../assets/img/server-icon.webp"><link href="../assets/css/bootstrap.css" rel="stylesheet"><link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet"><link href="../assets/css/mymc.css" rel="stylesheet"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="AuraSkills, mcMMO, and a detailed guide to AdvancedEnchantments on ModernMC."><title>Skills &amp; AdvancedEnchantments | ModernMC</title><link rel="ICON" href="../assets/img/server-icon.webp"><link href="../assets/css/bootstrap.css" rel="stylesheet"><link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet"><link href="../assets/css/mymc.css" rel="stylesheet"></head>
 <body><nav class="navbar navbar-default navbar-static-top" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html">ModernMC</a></div><div class="collapse navbar-collapse navbar-ex1-collapse"><ul class="nav navbar-nav navbar-right">
                         <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                         <li><a href="../pages/rules.html"><i class="fa fa-info-circle" aria-hidden="true"></i> Rules</a></li>
@@ -8,10 +8,117 @@
                         <li><a href="../pages/staff.html"><i class="fa fa-users" aria-hidden="true"></i> Staff</a></li>
                         <li><a href="../pages/vote.html"><i class="fa fa-check" aria-hidden="true"></i> Vote</a></li>
                         <li><a href="../pages/ModernMC_Shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a></li><li><a href="https://admin.modernmc.ca"><i class="fa fa-cog" aria-hidden="true"></i> Admin</a></li></ul></div></div></nav>
-<header class="jumbotron homepage-opening home-hero page-hero"><div class="container text-center"><h1 class="head">Skills &amp; Enchanting</h1><p>Build your character as you play.</p></div></header>
-<main class="container page-content wiki-copy"><p>ModernMC has two skill systems: AuraSkills and mcMMO. AdvancedEnchantments adds custom enchantments to equipment. These systems progress separately, so use each plugin's in-game help to see your own levels and abilities.</p>
-<h2>AuraSkills</h2><p>Open the skills interface with <span class="wiki-command">/skills</span>. The menu shows your skills and progression. Gain experience by playing and doing the activities described by each skill in game.</p>
-<h2>mcMMO</h2><p>Use <span class="wiki-command">/mcstats</span> to view your mcMMO levels and experience. The skill commands, such as <span class="wiki-command">/mining</span> or <span class="wiki-command">/herbalism</span>, provide more information about individual skills. <span class="wiki-command">/party</span> opens mcMMO party options; party features are separate from Towny membership.</p>
-<h2>Custom enchantments</h2><p>AdvancedEnchantments adds custom enchantments to gear. Read an item's description before using or trading it, and check the available in-game help for ways to obtain or manage enchantments. The exact enchantment pool and item rules are server configured.</p>
-<p class="wiki-note">Skill levels and item effects can change as plugins are updated or settings are adjusted. Treat the in-game menus and item descriptions as the current source.</p><p><a href="../pages/guide.html">&laquo; All player guides</a></p></main>
-<footer class="page-footer"><div class="container"><p>&copy; 2026 ModernMC</p></div></footer><script src="../assets/js/jquery-1.10.2.js"></script><script src="../assets/js/bootstrap.js"></script></body></html>
+<header class="jumbotron homepage-opening home-hero page-hero"><div class="container text-center"><h1 class="head">Skills &amp; AdvancedEnchantments</h1><p>Build your character as you play.</p></div></header>
+<main class="container page-content wiki-copy">
+    <p class="guide-intro">ModernMC has two skill systems, AuraSkills and mcMMO. AdvancedEnchantments (AE) adds custom enchants and support items to gear. Each system works separately, so use the in-game menus to check your progress and the current AE options.</p>
+
+    <nav class="wiki-note guide-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <a href="#auraskills">AuraSkills</a>
+        <a href="#mcmmo">mcMMO</a>
+        <a href="#advanced-enchantments">AE basics</a>
+        <a href="#enchantment-types">Enchantment categories</a>
+        <a href="#ae-items">AE item categories</a>
+        <a href="#finding-ae-items">Finding items</a>
+    </nav>
+
+    <section id="auraskills">
+        <h2>AuraSkills</h2>
+        <p>Open the skills interface with <span class="wiki-command">/skills</span>. It shows your skills and progress. Gain experience by playing and following the activities listed for each skill in game.</p>
+    </section>
+
+    <section id="mcmmo">
+        <h2>mcMMO</h2>
+        <p>Use <span class="wiki-command">/mcstats</span> to view your levels and experience. Skill commands such as <span class="wiki-command">/mining</span> and <span class="wiki-command">/herbalism</span> show more detail.</p>
+        <p><span class="wiki-command">/party</span> opens mcMMO party options. An mcMMO party is separate from your Towny town.</p>
+    </section>
+
+    <section id="advanced-enchantments">
+        <h2>AdvancedEnchantments (AE)</h2>
+        <p>AE adds custom enchantments and support items for gear. An enchantment book usually shows its name, level, compatible gear, and any success chance or failure consequence.</p>
+        <div class="wiki-note guide-callout">
+            <strong>Before using a book</strong>
+            <p>Read its full lore. Check the compatible item, effect, level, and success or failure details before applying, trading, or selling it.</p>
+        </div>
+        <p>AE's enchant pool, rates, items, and menus are configured by the server. Use the current in-game AE menu and item descriptions to see what is available.</p>
+    </section>
+
+    <section id="enchantment-types">
+        <h2>Enchantment categories</h2>
+        <p>These categories group the enchants configured for ModernMC by what they do. The examples and rarity groups below come from the server's current AdvancedEnchantments configuration. The in-game book description remains the best source for exact effects and levels.</p>
+        <div class="row guide-card-grid">
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Offense</h3><p>Attacks, extra damage, or effects that trigger when you hit a target.</p><p class="guide-example"><strong>Configured examples:</strong> Berserk, Lightning, Double Strike, Lifesteal, and Execute.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Defense &amp; recovery</h3><p>Damage reduction, recovery, or effects that trigger when you are attacked.</p><p class="guide-example"><strong>Configured examples:</strong> Ward, Hardened, Angelic, Arrow Deflect, and Overload.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Tools &amp; durability</h3><p>Effects that protect, repair, or improve equipment durability.</p><p class="guide-example"><strong>Configured examples:</strong> Restore, Abiding, and Reforged.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Movement &amp; survival</h3><p>Mobility, exploration, or protection from environmental hazards.</p><p class="guide-example"><strong>Configured examples:</strong> Jelly Legs, Anti Gravity, Springs, Aquatic, and Obsidianshield.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Utility &amp; progression</h3><p>Experience, soul collection, or effects that support other activities.</p><p class="guide-example"><strong>Configured examples:</strong> Inquisitive, SoulGrind, Soulbound, and Glowing.</p></article></div>
+        </div>
+        <p>Some enchants activate only after a specific action and may have a chance or cooldown. If a book will not apply, check gear compatibility and read the in-game failure message before trying again.</p>
+
+        <details class="wiki-note enchant-roster" open>
+            <summary>View all 98 configured enchants by rarity group</summary>
+            <p>The Enchanter menu currently offers Simple, Unique, Elite, Ultimate, Legendary, and Heroic books. Soul and Mastery are also defined in the enchant and group configuration, but do not appear as Enchanter buttons.</p>
+            <h3>Simple</h3><p>Aquatic, Etheral, Insomnia, Lightning, Thundering Blow, Glowing.</p>
+            <h3>Unique</h3><p>Berserk, Ward, Curse, Molten, Ravenous, Sustain, Plague Carrier.</p>
+            <h3>Elite</h3><p>Anti Gravity, Ender Slayer, Nether Slayer, Shackle, Execute, Frozen, Poison, Poisoned, Reforged, Snare, Springs, Stormcaller, Trap, Undead Ruse, Venom, Voodoo, Wither, Infernal, Pummel, Hardened.</p>
+            <h3>Ultimate</h3><p>Jelly Legs, Restore, Reinforced, Angelic, Arrow Lifesteal, Arrow Deflect, Ragdoll, Block, Dodge, Guardians, Ice Aspect, Implants, Obsidianshield, Piercing, Dominate, Eagle Eye, Heavy, Hellfire, Longbow, Tank, Valor, Pacify, Creeper Armor, Spirits.</p>
+            <h3>Legendary</h3><p>Protection, Surprise, Stun, Unholy, Clarity, Deathbringer, Double Strike, Enlighted, Gears, Kill Aura, Inquisitive, Inversion, Lifesteal, Overload, Rage, Armored, Exterminator, Abiding, Death God, Sniper.</p>
+            <h3>Heroic</h3><p>Mega Heavy, Soul Hardened, Soulbound, Reinforced Tank, Godly Overload, Master Inquisitive, Divine Enlighted, Lethal Sniper, Alien Implants, Ethereal Dodge, Paladin Armored, Demonic Lifesteal, Deep Bleed, Shadow Assassin.</p>
+            <h3>Soul</h3><p>Phoenix, Immortal, Divine Immolation, Paradox.</p>
+            <h3>Mastery</h3><p>SoulGrind, Horrify, Chain Lifesteal.</p>
+        </details>
+    </section>
+
+    <section id="ae-items">
+        <h2>AE item categories</h2>
+        <p>These are the items and systems listed in ModernMC's current AdvancedEnchantments configuration. Check the item lore and menu before using an item; rates and item results are set by the server.</p>
+        <div class="row guide-card-grid">
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Enchantment books</h3><p>The Server Enchanter sells random books for experience:</p><ul><li>Simple: 400 XP</li><li>Unique: 800 XP</li><li>Elite: 2,500 XP</li><li>Ultimate: 5,000 XP</li><li>Legendary: 25,000 XP</li><li>Heroic: 50,000 XP</li></ul><p><strong>Random Enchant Books</strong> are also enabled in random loot and villager trades. Use the menu to preview and purchase a group book.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Secret Dust, Magic Dust &amp; Mystery Dust</h3><p><strong>Ultimate Secret Dust</strong> is the ULTIMATE-group version of Secret Dust. Right-click a Secret Dust pouch to reveal Magic Dust or Mystery Dust for its group. Magic Dust increases a matching book's success chance and the server setting also lowers its destroy chance. Mystery Dust is listed as a failed by-product.</p><p>Secret Dust is included in configured random loot and villager trades. Direct Mystery Dust chance is set to 0 in those two pools.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Scrolls for protection or changes</h3><p><strong>White Scroll:</strong> protects an item from destruction by a failed enchant book. The global failure settings currently leave the target item intact on failure.</p><p><strong>Holy White Scroll:</strong> gives armor or a weapon a 100% chance to be kept on death. Its protection is removed after death.</p><p><strong>Randomization Scroll:</strong> rerolls success and destroy rates on a book of the same group.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Remove or reorganize enchants</h3><p><strong>Black Scroll:</strong> removes a random enchant and turns it into a book. The configured book has 95% success and 5% destroy chance.</p><p><strong>Transmog Scroll:</strong> reorganizes the enchantment lines on an item's lore.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Add enchantment slots</h3><p><strong>Slot Increasers</strong> add one slot for the matching group. <strong>Weapon, Armor, and Tool Orbs</strong> add slots to the corresponding gear type, up to the maximum shown on the orb.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Track activity</h3><p><strong>BlockTrak</strong> tracks blocks broken with a tool. <strong>FishTrak</strong> counts fish caught with a rod. <strong>MobTrak</strong> and <strong>StatTrak</strong> count mob and player kills with a weapon.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Track souls</h3><p><strong>Soul Tracker</strong> adds soul tracking to an item. <strong>Soul Gems</strong> are also included in the configured loot and trade pools. Soul enchants include Phoenix, Immortal, Divine Immolation, Paradox, and SoulGrind.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Rename items</h3><p><strong>Rename Tags</strong> rename eligible enchanted items. Color codes are enabled; formatting codes and words on the configured blocklist are restricted.</p></article></div>
+            <div class="col-sm-6"><article class="wiki-card guide-category"><h3>Custom armor sets &amp; weapons</h3><p>AE also defines these custom gear items:</p><p><strong>Armor sets:</strong> Dimensional Traveller, KOTH, Phantom, Ranger, Supreme, Yeti, and Mother of Yijki.</p><p><strong>Weapons:</strong> Time Splitter, KOTH Axe, KOTH PvP Sword, Phantom Scythe, and Supreme Fanny Pack.</p><p>The AE files define the items, but do not identify their player obtain sources. Check current server menus and announcements.</p></article></div>
+        </div>
+    </section>
+
+    <section id="finding-ae-items">
+        <h2>Finding and using AE items</h2>
+        <p>ModernMC's AE configuration currently enables three routes:</p>
+        <ul>
+            <li><strong>Server Enchanter:</strong> buy books from the six experience-priced groups above. The menu also links to the Alchemist and Tinkerer.</li>
+            <li><strong>Generated chest loot:</strong> enabled with a 5% chance for a container to receive AE items, up to two items per container.</li>
+            <li><strong>Villager trades:</strong> enabled with a 3% chance of adding AE items. Trading all configured loot types is enabled.</li>
+        </ul>
+        <p>The Alchemist combines two books of the same enchant and level into a higher-level book, or two Magic Dusts of the same rarity into dust with a higher success chance. The Tinkerer accepts books and offers the configured dust and experience trade. Follow the preview and confirmation in each menu.</p>
+        <ol class="guide-steps">
+            <li><strong>Inspect the item.</strong> Confirm its effect, compatible gear, level, and any success or failure details.</li>
+            <li><strong>Check your gear.</strong> Look at existing enchants and available capacity before applying a book.</li>
+            <li><strong>Follow the instructions.</strong> Use scrolls, dust, or other support items only as their lore describes.</li>
+            <li><strong>Ask if unsure.</strong> Check in-game help or ask staff before risking valuable gear.</li>
+        </ol>
+    </section>
+
+    <p class="wiki-note"><strong>Server settings can change.</strong> AuraSkills, mcMMO, and AE progress independently. Current menus, item lore, and staff guidance take precedence if an enchant, item, rate, or source changes.</p>
+    <p><a href="../pages/guide.html">&laquo; All player guides</a></p>
+</main>
+<footer class="page-footer"><div class="container"><p>&copy; 2026 ModernMC</p></div></footer><script src="../assets/js/jquery-1.10.2.js"></script><script src="../assets/js/bootstrap.js"></script>
+<script>
+(function () {
+    var roster = document.querySelector('.enchant-roster');
+    var storageKey = 'modernmc-ae-enchant-roster-open';
+    if (!roster) return;
+    try {
+        var savedState = window.localStorage.getItem(storageKey);
+        if (savedState !== null) roster.open = savedState === 'open';
+        roster.addEventListener('toggle', function () {
+            window.localStorage.setItem(storageKey, roster.open ? 'open' : 'closed');
+        });
+    } catch (error) {
+        // The open attribute still keeps the roster available if browser storage is disabled.
+    }
+})();
+</script></body></html>
