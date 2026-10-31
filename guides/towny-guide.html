@@ -3,238 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>ModernMC</title>
-        <link rel="ICON" href="/assets/img/server-icon.webp">
-        <!-- Bootstrap core CSS -->
-        <link href="/assets/css/bootstrap.css" rel="stylesheet">
-		<!-- MyMC CSS -->
-        <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.css">
-		<!-- FontAwesome CSS -->
-        <link href="/assets/css/mymc.css" rel="stylesheet">
+        <meta name="description" content="A player guide to towns, nations, plots, and remote Towny commands on ModernMC.">
+        <title>Towny Guide | ModernMC</title>
+        <link rel="ICON" href="../assets/img/server-icon.webp">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../assets/css/mymc.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <!--server logo-->
-                    <a class="panel-title navbar-brand" href="/index.html">ModernMC</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <ul class="nav navbar-nav navbar-right">
-                        <li ><a href="/guides/towny-guide.html" style="color: green;"><i class="fa fa-home"></i> Towny</a></li>
-                        <li><a href="rules.html" style="color:lightseagreen;"><i class="fa fa-info-circle"></i> Vanilla</a></li>
-                        <li><a href="Hardcore-guide.html" style="color:red;"><i class="fas fa-burn"> Hardcore</i></a></li>
-                    </ul> 
-                      
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-      
-             
-    </nav>
-    <nav class="flex-column">
-        <div class="container">
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading1" style="color: #1CC7E3;">Towny Commands</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading2" style="color: #1CC7E3;">Town commands</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading3" style="color: #1CC7E3;">Plot Commands</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading6" style="color: #1CC7E3;">Residents</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading4" style="color: #1CC7E3;">Town Ranks</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading5" style="color: #1CC7E3;">Nation commands</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading6" style="color: #1CC7E3;">Nation Ranks</a>
-                  </li>
-              </ul>
-        </div>
-    </div>
-    </nav>           
-        
-            <!-- Content here! -->
-            
-            <div class="container">
-                      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                        <h4 class="header" id="scrollspyHeading1">Towny Commands</h4>
-                        <ol class="">
-                            <ul class="ul-list">
-                                <li class=""><b>/towny ? </b>:Shows the list commands .</li>
-                                <li><b>/towny map</b> :Displays a map of nearby townblocks.</li>
-                                <li><b>/towny prices</b> :Displays the prices used with our economy</li>
-                                <li><b>/towny top</b> :Displays the highscores.</li>
-                                <li><b>/towny time</b> :Displays time untill a new day.</li>
-                                <li><b>/towny universe</b> :Displays stats</li>
-                                <li><b>/towny v</b> :Displays the version of Towny.</li>
-                                <li><b>/towny war:</b> :'/Towny war' for more info. Towny war is currently not enabled, if voted on on Discord then I'll enable it</li>
-                            </ul>
-                        </ol>
-                        <h4 class="header" id="scrollspyHeading2">Town Commands</h4>
-                        <ol class="">
-                            <ul class="ul-list">
-                                <li class=""><b>/town</b> shows basic information of your town, such as your towns bank's balanace, Whom has which rank, number of plots available, how many bonus lots the town has.</li>
-                                <li><b>/town new [name]</b> Is used to create your town. note use '_" instead of spaces; for example /town create New_York.</li>
-                                <li><b>/town deposit:</b> is used to deposit money into your town bank, for example /town deposit 1000.</li>
-                                <li><b>/town here</b> Shortcut to the town's status of your current location.</li>
-                                <li><b>/town list</b> Shows a list of towns created.</li>
-                                <li><b>/town online</b> Lists all online resident in town</li>
-                                <li><b>/town leave</b> is to exit a town.</li>
-                                <li><b>/town add:</b> is used to members to your town, for example /town add [playername].</li>
-                                <li><b>/town rank:</b> is used to give a member a <strong><a href="#scrollspyHeading4">town rank</a></strong> such as, example /town rank add [playername] [rank].</li>
-                                <li><b>/town grouplist [town] [page]</b> Shows the names and any other information of the plot groups of a town.</li>
-                                <li><b>/town plot</b> Shows a detailed list of plot types of the town, and the plot types the town's residents own.</li>
-                                <li><b>/town say</b> Sends a message to all members currently online.</li>
-                            </ul>
-                        </ol>
-                        <h4 class="header" id="scrollspyHeading3">Plot commands</h4>
-                        <ol class="">
-                            <ul class="ul-list">
-                                <li>/plot: shows basic infomation of your town, such as your towns bank's balance, Whom has which rank, number of plots available, how many bonus lots the town has.</li>
-                                <li>/plot new [name] Is used to create your town. note use '_" instead of spaces; for example /town create New_York.</li>
-                                <li>/plot deposit: is used to deposit money into your town bank, for example /town deposit 1000.</li>
-                                <li>/plot here Shortcut to the town's status of your current location.</li>
-                                <li>/plot list Shows a list of towns created.</li>
-                                <li>/plot online Lists all online resident in town</li>
-                                <li>/plot leave is to exit a town.</li>
-                                <li>/plot add: is used to members to your town, for example /town add [playername].</li>
-                                <li>/plot rank: is used to give a member a town rank such as, example /town rank add [playername] [rank].</li>
-                                <li>/plot grouplist [town] [page] Shows the names and any other infomation of the plot groups of a town.</li>
-                                <li>/plot plot Shows a detailed list of plot types of the town, and the plot types the town's residents own.</li>
-                                <li>/plot say Sends a message to all members currently online.</li>
-                            </ul>
-                    </ol>
-                        <h3 class="header" id="scrollspyHeading4">Town Ranks</h3>
-                            <ul class="ul-list">
-                                <h4 class="subheading">Mayor</h4>
-                                <li class="" >Tax exempted</li>
-                                <li class="">Claim Town land</li>
-                                <li class="">Invite new town members</li> 
-                                <li class="">Full control over residents plots</li> 
-                                <li class="">Control over toggling mobs, fire tick, pvp etc</li>
-                            </ul>
-                            <ul class="ul-list">
-                                <h4 class="subheading">Co-Mayor</h4>
-                                <li class="" >Tax exempted</li>
-                                <li class="">Claim Town land</li>
-                                <li class="">Invite new town members</li> 
-                                <li class="">Full control over residents plots</li> 
-                                <li class="">Control over toggling mobs, fire tick, pvp etc</li>
-                            </ul>
-                            <ul class="ul-list">
-                                <h4 class="subheading">Assistant</h4>
-                                <li class="" >Tax exempted</li>
-                                <li class="">Claim Town land</li>
-                                <li class="">Invite new town members</li> 
-                                <li class="">Full control over residents plots</li> 
-                                <li class="">Control over toggling mobs, fire tick, pvp etc</li>
-                            </ul>
-                            <ul class="ul-list">
-                                <h4 class="subheading">Helper</h4>
-                                <li class="" >Tax exempted</li>
-        
-                            </ul>
-                            <ul class="ul-list">
-                                <h4 class="subheading">VIP</h4>
-                                <li class="" >Tax exempted</li>
-                            </ul>
-                        </ul>
-                        <ul class="ul-list">
-                            <h4 class="subheading">VIP</h4>
-                            <li class="" >Tax exempted</li>
-                        </ul>
-
-                        <h4 class="header" id="scrollspyHeading5">Nation Commands</h4>
-                        <ul class="ul-list">
-                            <li class="">/nation: shows basic infomation of your town, such as your towns bank's balanace, Whome has which rank, number of plots avalable, how many bonus lots the town has</li>
-                            <li>/nation deposit: is used to dpeosit money into your town bank, for example /town deposit 1000</li>
-                            <li>/nation add: is used to members to your town, for example /town add [playername]</li>
-                            <li>/nation rank: is used to give a member a town <a href="#scrollspyHeading6">rank</a>  such as, example /town rank add [playername] [rank]</li>
-                        </ul>
-                        <h4 class="header" id="scrollspyHeading6">Nation Ranks</h4>
-                        <ol class="">
-                            <ul class="ul-list">
-                                <h4>King</h4>
-                                <li class="" >Tax exempted</li>
-                                <li class="">Claim Town land</li>
-                                <li class="">Invite new town members</li> 
-                                <li class="">Full control over residents plots</li> 
-                                <li class="">Control over toggling mobs, fire tick, pvp etc</li>
-                            </ul>
-                            <ul class="ul-list">
-                                <h4>Queen</h4>
-                                <li class="" >Tax exempted</li>
-                                <li class="">Claim Town land</li>
-                                <li class="">Invite new town members</li> 
-                                <li class="">Full control over residents plots</li> 
-                                <li class="">Control over toggling mobs, fire tick, pvp etc</li>
-                            </ul>
-                            <ul class="ul-list">
-                                <h4>Assistant</h4>
-                                <li class="" >Tax exempted</li>
-                                <li class="">Claim Town land</li>
-                                <li class="">Invite new town members</li> 
-                                <li class="">Full control over residents plots</li> 
-                                <li class="">Control over toggling mobs, fire tick, pvp etc</li>
-                            </ul>
-                            <ul class="ul-list">
-                                <h4>Helper</h4>
-                                <li class="" >Tax exempted</li>
-                            </ul>
-                        </ol>
-                      </div>
-            </div>
-            <div class="container">
-                <h5 class="page-header" style="color: red;"><b>Page is still under construction, if you wish to help continue building guides please make a pull request on our <a href="https://github.com/killbots2012/ModernMC-site">GitHub </a></b></h5>
-                </div>
-            <hr>
-            <footer>
-                <div class="container">
-                    <div class="col-lg-12">
-                        <ul class="nav nav-pills right">  
-                            <ul class="nav nav-pills bottom">
-                            <li role="presentation"><a href="/pages/rules.html"><i class="fa fa-info-circle"></i></a></li>
-                            <li role="presentation"><a href="/pages/staff.html"><i class="fa fa-star"></i></a></li>
-                            <li role="presentation"><a href="/pages/vote.html"><i class="fa fa-check"></i></a></li>
-                            <li role="presentation"><a href="https://modermmc.enjin.com/shop"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>  
-                        <ul class="nav nav-pills right">             
-                            <li class="presentation"><a href="http://discord.modernmc.ca/"><i class="fab fa-discord"></i></a></li>
-                            <li class="presentation"><a href="https://www.youtube.com/channel/UC0aJPofvns-VGgAutvPu5rQ"><i class="fab fa-youtube"></i></a></li>
-                            <li class="presentation"><a href="https://www.instagram.com/moderntowny/"><i class="fab fa-instagram"></i></a></li>
-                            <li class="presentation"><a href="https://twitter.com/ModernTowny_MMC"><i class="fab fa-twitter"></i></a></li>
-                            <li class="pull-right">&copy; 2022 ModernMC</li>
-                        </ul> 
-                </div>
-            </footer>
-                </div>
-                <!-- /.container -->
-                <!-- JavaScript -->
-                <script src="/assets/js/jquery-1.10.2.js"></script>
-                <script src="/assets/js/bootstrap.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-            </body>
-        </html>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html">ModernMC</a></div><div class="collapse navbar-collapse navbar-ex1-collapse"><ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="../pages/rules.html"><i class="fa fa-info-circle" aria-hidden="true"></i> Rules</a></li>
+                        <li class="active"><a href="../pages/guide.html"><i class="fa fa-book" aria-hidden="true"></i> Guides</a></li>
+                        <li><a href="../pages/maps.html"><i class="fa fa-globe" aria-hidden="true"></i> Maps</a></li>
+                        <li><a href="../pages/staff.html"><i class="fa fa-users" aria-hidden="true"></i> Staff</a></li>
+                        <li><a href="../pages/vote.html"><i class="fa fa-check" aria-hidden="true"></i> Vote</a></li>
+                        <li><a href="../pages/ModernMC_Shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a></li><li><a href="https://admin.modernmc.ca"><i class="fa fa-cog" aria-hidden="true"></i> Admin</a></li></ul></div></div></nav>
+        <header class="jumbotron homepage-opening home-hero page-hero"><div class="container text-center"><h1 class="head">Towns, Nations &amp; Land</h1><p>Make a home, protect your builds, and grow together.</p></div></header>
+        <main class="container page-content wiki-copy">
+            <p>Towny is ModernMC's land-claim and community system. Residents join towns, towns can join nations, and town plots let players decide how land is used.</p>
+            <p class="wiki-note">Towny prices and some options are set by the server. Use <span class="wiki-command">/towny prices</span> in game for current costs and <span class="wiki-command">/towny ?</span> for the command list.</p>
+            <h2>Join a town</h2>
+            <p>Ask a town's mayor or an assistant for an invitation. When invited, follow the prompt and accept it. If a town is open to join, use <span class="wiki-command">/town join &lt;town&gt;</span>. Check a town first with <span class="wiki-command">/town &lt;name&gt;</span>, then use <span class="wiki-command">/town leave</span> if you decide to move on.</p>
+            <h2>Start a town</h2>
+            <ol>
+                <li>Choose a suitable place in the Towny world and stand where you want the town spawn to be.</li>
+                <li>Check the creation cost with <span class="wiki-command">/towny prices</span> and make sure you have enough money.</li>
+                <li>Create the town with <span class="wiki-command">/town new &lt;name&gt;</span>.</li>
+                <li>Invite players with <span class="wiki-command">/town invite &lt;player&gt;</span>. Use <span class="wiki-command">/town</span> to see your town's status and available actions.</li>
+            </ol>
+            <h2>Claim and manage plots</h2>
+            <p>Towny land is divided into chunks. Press <strong>F3 + G</strong> in Java Edition to show chunk borders. A town's mayor and permitted ranks expand its claims. Town members can claim plots that the town has made available to them with <span class="wiki-command">/plot claim</span>.</p>
+            <ul><li>Use <span class="wiki-command">/town here</span> to see information about the town and plot where you are standing.</li><li>Use <span class="wiki-command">/towny map</span> to view nearby claimed land.</li><li>Use <span class="wiki-command">/plot</span> to see plot commands and options.</li><li>Ask town leadership before changing or building on land that is not yours.</li></ul>
+            <h2>Town and nation chat</h2>
+            <p>Use <span class="wiki-command">/tc</span> for town chat and <span class="wiki-command">/nc</span> for nation chat. Use the VentureChat channel command shown in the chat help to return to public chat.</p>
+            <h2>Town banks across the network</h2>
+            <p>The ModernMC Towny Bridge lets you look up town information while connected to another backend. On those servers, <span class="wiki-command">/t</span> or <span class="wiki-command">/town</span> shows town information; <span class="wiki-command">/t residents [town]</span> and <span class="wiki-command">/t online [town]</span> list residents. Town members with the needed Towny rights can use <span class="wiki-command">/t deposit &lt;amount|all&gt;</span>; eligible town leaders can use <span class="wiki-command">/t withdraw &lt;amount|all&gt;</span>.</p>
+            <p class="wiki-note">On the Towny server, Towny's own commands handle Towny actions. Bridge commands are available only when you are on another network backend, and withdrawals require the appropriate town rank or permission.</p>
+            <h2>Form a nation</h2>
+            <p>Town leaders can check <span class="wiki-command">/nation</span> and <span class="wiki-command">/towny prices</span> for current nation requirements and options. Nation leaders can invite towns, manage allies, and set nation ranks. The in-game command help shows the options available to your rank.</p>
+            <p><a href="../pages/guide.html">&laquo; All player guides</a></p>
+        </main>
+        <footer class="page-footer"><div class="container"><p>&copy; 2026 ModernMC</p></div></footer>
+        <script src="../assets/js/jquery-1.10.2.js"></script><script src="../assets/js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop | ModernMC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Marcellus&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/shop.css">
+<script type='text/javascript' nonce='Qzt6wXrHAav/FvyzUCfxyw==' src='https://d0088a15-26a0-4ef1-bc02-8599aa461cab.frame.claudeusercontent.com/VttAmnJBBZIzfREJd6x1H6QoQV8fsiNgYKedKptjYIvj54SzggxCwDJaRtYjnA0xLaxvvekxbBLQ-e5mGgefX3oInxlOZjazmJLOxf9EvXg7bImnDOwGr8qORzdoLeg6w_v5ZMnqcZ2Q7EDHhUGyaknMfJRONDKhryjW49hdQvDzVEAx0ie20XnNDOfmwL-gHzebXg5_6_wwFdyfnMmw6_duGNbTMScy_tQDmic1zzeG9kmRFplGzeosYD_oClL0Ymd56UQxB-IvxiTo0yMIpTeUGZf2Umw-6BKr6srQ4vYVAhuh36AJAlVLFDqtAFWcUKOTa2o9hG3jHK0PsOMena5RKGB7CDDWRcDnFoqD86ZwcY_SsIejRfCC2iMBfnwnq7PIv5IQVzSkaVGQV2v9T5bQxZxTSMxDoIM69mrRHo3kV9cl5yRcvBpkcRqLss-kOxIvks9ZHgcGsM_6-NBo05e0IGsTJYxaIeA8Mfk2HnXZX4EttBwiEVf7k9sAXkJBs5ypR1p278OpMXGAN5kdoLJdl_8XUXqn3Pr3nd_bBjtUAJfzUNVUxppnPDRvtT0-UVupFe2arIY2t2rK6c5D2yPJF68EI0EgIV3VeiADSMLDozZ--p_7PNkIlYndpIdhwb9nD4qBCFYZ1lwHPnidlSJ_D_h0GMskuMRJDfAsNmPUB75pQpKCLMuoTNSKx_KuXyyPLDEBol28b_RsOo0ADw'></script></head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="https://modernmc.ca/index.html" aria-label="ModernMC main website">
+    <span class="badge-mmc" aria-hidden="true">MMC</span>
+    ModernMC
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="links" aria-label="Open menu">&#9776;</button>
+  <nav>
+    <ul class="links" id="links">
+      <li><a href="https://modernmc.ca/index.html">
+        <svg viewbox="0 0 16 16" aria-hidden="true"><path d="M8 1 1 7h2v8h4v-5h2v5h4V7h2z"/></svg>Home</a></li>
+      <li><a href="https://modernmc.ca/pages/rules.html">
+        <svg viewbox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7"/></svg>Rules</a></li>
+      <li><a href="https://modernmc.ca/pages/guide.html">Guides</a></li>
+      <li><a href="https://modernmc.ca/pages/maps.html">Maps</a></li>
+      <li><a href="https://modernmc.ca/pages/staff.html">Staff</a></li>
+      <li><a href="https://modernmc.ca/pages/vote.html">Vote</a></li>
+      <li><a href="#shop" aria-current="page">Shop</a></li>
+      <li><a href="https://admin.modernmc.ca">Admin</a></li>
+    </ul>
+  </nav>
+  <button class="btn ghost cart-toggle" id="openCart" aria-controls="drawer" aria-expanded="false">
+    Cart (<span id="cartCount">0</span>)
+  </button>
+</header>
+
+<section class="hero">
+  <span class="eyebrow">ModernMC Towny Shop</span>
+  <h1>Support the server, <span class="hero-accent">gear up your town.</span></h1>
+  <p>Ranks and Towny packages to help you grow your town and get around the world faster.</p>
+  <div class="cta">
+    <a class="btn" href="#shop">Browse the shop</a>
+    <a class="btn ghost" href="https://modernmc.ca/index.html">Back to the main site</a>
+  </div>
+</section>
+
+<main id="shop">
+  <div class="section-head">
+    <span class="eyebrow">Make it your world</span>
+    <h2>Shop packages</h2>
+    <p>Pick a category, add to your cart, then check out securely with Tebex.</p>
+    <p class="shop-disclaimer">NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+    <p class="rank-note">Rank examples are cosmetic only: chat styling, titles, and lobby effects. They include no kits, currency, extra claims, travel perks, priority access, or combat benefits. Draft ranks are not available to purchase yet.</p>
+    <div class="filters" role="group" aria-label="Filter products">
+      <button class="filter" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="ranks" aria-pressed="false">Ranks</button>
+      <button class="filter" data-filter="towny" aria-pressed="false">Towny</button>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <span>ModernMC Towny · <a href="https://modernmc.ca/pages/guide.html">Player guides</a> · <a href="http://discord.modernmc.ca/">Discord</a></span>
+    <span>&copy; 2026 ModernMC. Not affiliated with Mojang or Microsoft.</span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+  <header>
+    <h2 id="cartTitle">Your cart</h2>
+    <button class="close" id="closeCart" aria-label="Close cart">&times;</button>
+  </header>
+  <ul class="lines" id="lines"></ul>
+  <div class="total"><span>Total</span><span id="total">$0.00</span></div>
+  <label class="ign-label">
+    Minecraft username
+    <input id="ign" type="text" maxlength="16" placeholder="Steve" autocomplete="off">
+  </label>
+  <a class="btn checkout" id="checkout" href="https://YOUR-STORE.tebex.io/checkout" target="_blank" rel="noopener" aria-disabled="true">Checkout with Tebex</a>
+  <p class="fine">Replace YOUR-STORE with your Tebex store address. Items are delivered to your username after payment.</p>
+</aside>
+
+<script>
+  // Cosmetic-only donor-rank examples from the donor-ranks LuckPerms track.
+  // Keep these unavailable until real Tebex packages and prices are configured.
+  const PRODUCTS = [
+    { id: 'guild-apprentice', cat: 'ranks', name: 'Guild Apprentice', price: null, desc: 'Example: a Guild Apprentice chat prefix and one selectable prefix color.', art: 'apprentice' },
+    { id: 'guild-warden', cat: 'ranks', name: 'Guild Warden', price: null, desc: 'Example: Guild Warden chat styling plus a decorative particle trail in the lobby.', art: 'warden' },
+    { id: 'guild-steward', cat: 'ranks', name: 'Guild Steward', price: null, desc: 'Example: Guild Steward styling, a decorative profile title, and additional color choices.', art: 'steward' },
+    { id: 'guild-chancellor', cat: 'ranks', name: 'Guild Chancellor', price: null, desc: 'Example: a distinctive Guild Chancellor title and the full collection of lobby cosmetics.', art: 'chancellor' },
+    { id: 't-founder', cat: 'towny', name: 'Town Founder Kit', price: 7.99, desc: 'Starter town charter, a town beacon, and a welcome banner.', art: 'home' },
+    { id: 't-nation', cat: 'towny', name: 'Nation Charter', price: 14.99, desc: 'Create a nation, add two extra town slots, and a nation flag.', art: 'flag' },
+    { id: 't-upkeep', cat: 'towny', name: 'Upkeep Pass (30 days)', price: 9.99, desc: 'Town upkeep is covered for 30 days, so your town never falls.', art: 'clock' }
+  ];
+
+  // Simple line icons drawn in the site's cyan.
+  const ART = {
+    star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',
+    apprentice: '<path d="m14 5 5 5"/><path d="m12.5 6.5 2-2a2.1 2.1 0 0 1 3 3l-2 2"/><path d="m5 19 8.5-8.5"/><path d="m4 20 3.5-1L5 16.5z"/><path d="M11 8 7 4 4 7l4 4"/>',
+    warden: '<path d="M12 2.5 20 5v6c0 5-3.3 8.5-8 10.5C7.3 19.5 4 16 4 11V5z"/><path d="m8.5 11.5 2.2 2.2 4.8-5"/>',
+    steward: '<circle cx="8" cy="15.5" r="3.5"/><path d="m10.5 13 8-8 2 2-2 2 1.5 1.5-2 2L16.5 11l-3.5 3.5"/>',
+    chancellor: '<path d="m3 7 5 4 4-7 4 7 5-4-2 12H5z"/><path d="M5 22h14"/><circle cx="3" cy="6" r="1"/><circle cx="12" cy="3" r="1"/><circle cx="21" cy="6" r="1"/>',
+    home: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>',
+    flag: '<path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/>',
+    clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'
+  };
+
+  const cart = new Map();
+  const money = n => '$' + n.toFixed(2);
+  const $ = sel => document.querySelector(sel);
+  const activeFilter = () => document.querySelector('.filter[aria-pressed="true"]').dataset.filter;
+  const cartCount = () => [...cart.values()].reduce((s, i) => s + i.qty, 0);
+
+  function renderGrid(filter = 'all') {
+    $('#grid').innerHTML = PRODUCTS
+      .filter(p => filter === 'all' || p.cat === filter)
+      .map(p => `
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true">${ART[p.art]}</svg></div>
+          <h3>${p.name}</h3>
+          <p>${p.desc}</p>
+          <div class="foot">
+          <span class="price">${p.price === null ? 'Price TBD' : money(p.price)}</span>
+            <button class="add" data-id="${p.id}" ${p.price === null || cart.has(p.id) ? 'disabled' : ''}>
+              ${p.price === null ? 'Draft example' : cart.has(p.id) ? 'In cart' : 'Add to cart'}
+            </button>
+          </div>
+        </article>`).join('');
+  }
+
+  function updateCheckout() {
+    const btn = $('#checkout');
+    const hasItems = cartCount() > 0;
+    const hasName = $('#ign').value.trim().length > 0;
+    btn.setAttribute('aria-disabled', String(!(hasItems && hasName)));
+    btn.textContent = !hasItems ? 'Add items to check out'
+      : !hasName ? 'Enter your username to continue'
+      : 'Checkout with Tebex';
+  }
+
+  function renderCart() {
+    const items = [...cart.values()];
+    const total = items.reduce((s, i) => s + i.qty * (i.price || 0), 0);
+    $('#cartCount').textContent = cartCount();
+    $('#total').textContent = money(total);
+    $('#lines').innerHTML = items.length ? items.map(i => `
+      <li>
+        <div><strong>${i.name || 'Untitled rank'}</strong><br><small>${i.price === null ? 'Price not set' : money(i.price) + ' each'}</small></div>
+        <div class="qty">
+          <button data-dec="${i.id}" aria-label="Remove one ${i.name || 'item'}">&minus;</button>
+          <span>${i.qty}</span>
+          <button data-inc="${i.id}" aria-label="Add one ${i.name || 'item'}">+</button>
+        </div>
+      </li>`).join('') : '<li class="empty">Your cart is empty. Pick something from the shop.</li>';
+    updateCheckout();
+  }
+
+  function setCart(open) {
+    $('#drawer').classList.toggle('open', open);
+    $('#scrim').classList.toggle('open', open);
+    $('#drawer').setAttribute('aria-hidden', String(!open));
+    $('#openCart').setAttribute('aria-expanded', String(open));
+    if (open) $('#closeCart').focus();
+  }
+
+  $('#grid').addEventListener('click', e => {
+    const btn = e.target.closest('.add');
+    if (!btn || btn.disabled) return;
+    const p = PRODUCTS.find(x => x.id === btn.dataset.id);
+    cart.set(p.id, { ...p, qty: 1 });
+    renderGrid(activeFilter());
+    renderCart();
+  });
+
+  $('#lines').addEventListener('click', e => {
+    const inc = e.target.dataset.inc, dec = e.target.dataset.dec;
+    if (!inc && !dec) return;
+    if (inc) cart.get(inc).qty++;
+    if (dec) { const it = cart.get(dec); it.qty > 1 ? it.qty-- : cart.delete(dec); }
+    renderGrid(activeFilter());
+    renderCart();
+  });
+
+  document.querySelector('.section-head .filters').addEventListener('click', e => {
+    const b = e.target.closest('.filter');
+    if (!b) return;
+    document.querySelectorAll('.filter').forEach(f => f.setAttribute('aria-pressed', String(f === b)));
+    renderGrid(b.dataset.filter);
+  });
+
+  $('#menuToggle').addEventListener('click', () => {
+    const open = $('#links').classList.toggle('open');
+    $('#menuToggle').setAttribute('aria-expanded', String(open));
+  });
+  $('#openCart').addEventListener('click', () => setCart(true));
+  $('#closeCart').addEventListener('click', () => setCart(false));
+  $('#scrim').addEventListener('click', () => setCart(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setCart(false); });
+  $('#ign').addEventListener('input', updateCheckout);
+  $('#checkout').addEventListener('click', e => {
+    if ($('#checkout').getAttribute('aria-disabled') === 'true') e.preventDefault();
+  });
+
+  renderGrid();
+  renderCart();
+</script>
+</body>
+</html>

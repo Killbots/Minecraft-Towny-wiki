@@ -3,117 +3,129 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>ModernMC</title>
-        <link rel="ICON" href="assets/img/server-icon.webp">
-        <!-- Bootstrap core CSS -->
+        <meta name="description" content="Player guides and server information for ModernMC Towny.">
+        <title>ModernMC | Towny Survival</title>
+        <link rel="icon" href="assets/img/server-icon.webp">
         <link href="assets/css/bootstrap.css" rel="stylesheet">
-		<!-- MyMC CSS -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.css">
-		<!-- FontAwesome CSS -->
         <link href="assets/css/mymc.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
-                    <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
                     <a class="navbar-brand" href="index.html">ModernMC</a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="/pages/rules.html"><i class="fa fa-info-circle"></i> Rules</a></li>
-                        <li><a href="/pages/guide.html"><i class="fa fa-info-circle"></i> Guides</a></li>
-                        <li><a href="/pages/staff.html"><i class="fa fa-star"></i> Staff</a></li>
-                        <li><a href="/pages/vote.html"><i class="fa fa-check"></i> Vote</a></li>
-                        <!-- <li><a href="/pages/maps.html"><i class="fa fa-book"></i> Maps</a></li>  Needs addressing-->
-                        <li><a href="https://modermmc.enjin.com/shop"><i class="fa fa-shopping-cart"></i> Shop</a></li>
-                        <li><a href="https://staff.modernmc.ca"><i class="fa fa-gear"></i>Admin</a></li>
+                        <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="pages/rules.html"><i class="fa fa-info-circle" aria-hidden="true"></i> Rules</a></li>
+                        <li><a href="pages/guide.html"><i class="fa fa-book" aria-hidden="true"></i> Guides</a></li>
+                        <li><a href="pages/maps.html"><i class="fa fa-globe" aria-hidden="true"></i> Maps</a></li>
+                        <li><a href="pages/staff.html"><i class="fa fa-star" aria-hidden="true"></i> Staff</a></li>
+                        <li><a href="pages/vote.html"><i class="fa fa-check" aria-hidden="true"></i> Vote</a></li>
+                        <li><a href="pages/ModernMC_Shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+                        <li><a href="https://admin.modernmc.ca"><i class="fa fa-cog" aria-hidden="true"></i> Admin</a></li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>
-        <!-- Big opening-->
-        <div class="jumbotron homepage-opening">
-            <div class="container">
-                <div class="row text-center">
-                    <h1 class="head">ModernMC</h1>
-                    <h2 class="leader">play.modernmc.ca</h2>
-                   
-                    <br />
-                    <center><a class="btn btn-huge btn-info btn-glow" href="https://www.paypal.com/donate/?hosted_button_id=VCZ5D6B9GWJKE">Buy me a coffee?</a></center>
+
+        <header class="jumbotron homepage-opening home-hero">
+            <div class="container text-center">
+                <p class="home-eyebrow">ModernMC Towny</p>
+                <h1 class="head">Build your place in the world.</h1>
+                <p class="home-intro">Claim land, grow a town, and explore a survival world shaped by its players.</p>
+                <div class="home-connect">
+                    <span class="home-connect-label">Join us</span>
+                    <span class="home-server-address">play.modernmc.ca</span>
                 </div>
+                <a class="btn btn-info home-guide-button" href="pages/guide.html">Browse player guides <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-        </div>
-        <!-- /Big opening -->
-        <div class="container">
-            <div class="row text-center mc-items">
-                <div class="col-md-5">
-                    <div class="icon">
-                        <a href="#"><img src="assets/img/swords.webp"/></a>
-                    </div>
-                    <h2 class="head">Hardcore</h2>
-                    <p style="color: aqua;">is like normal survival Minecraft but turned up, more mobs that are harder to kill! 
-                        <br /><br />
-                    </p>
+        </header>
+
+        <main class="container home-content">
+            <section aria-labelledby="features-heading">
+                <div class="home-section-heading">
+                    <p class="home-eyebrow">Make it your world</p>
+                    <h2 id="features-heading">Find your way around</h2>
+                    <p>Start with a town, then discover the activities and tools that suit your play style.</p>
                 </div>
-                <div class="col-md-5">
-                    <div class="icon">
-                        <a href="#"><img src="assets/img/Vanilla.webp"/></a>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <article class="wiki-card home-card">
+                            <div class="home-card-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+                            <h3>Towns &amp; land</h3>
+                            <p>Join a town, protect your builds, claim plots, and meet your neighbours.</p>
+                            <a href="guides/towny-guide.html">Explore Towny <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
                     </div>
-                    <h2 class="head">Vanilla</h2>
-                    <p style="color: aqua;">Survival Minecraft is a game play where you need to collect all your resources to build, and survive from monsters
-                        <br /><br />
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <div class="icon">
-                        <a href="/guides/towny-guide.html"><img src="assets/img/towny.jpeg" /></a>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="wiki-card home-card">
+                            <div class="home-card-icon"><i class="fa fa-usd" aria-hidden="true"></i></div>
+                            <h3>Jobs &amp; economy</h3>
+                            <p>Earn money through jobs and use it in the server shop and your town.</p>
+                            <a href="guides/economy-guide.html">Learn about the economy <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
                     </div>
-                    <h2 class="head">Towny</h2>
-                    <p style="color: aqua;">The original Player-managed Protection within a resident/town/nation-hierarchy, is also the place to hang out collect MCmmo points, and hang out with people.
-                        <br /><br />
-                    </p>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="wiki-card home-card">
+                            <div class="home-card-icon"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+                            <h3>Skills &amp; progression</h3>
+                            <p>Build your skills over time with AuraSkills, mcMMO, and custom enchantments.</p>
+                            <a href="guides/progression-guide.html">Discover progression <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="wiki-card home-card">
+                            <div class="home-card-icon"><i class="fa fa-anchor" aria-hidden="true"></i></div>
+                            <h3>Fishing &amp; quests</h3>
+                            <p>Find custom catches, take on quests, and watch for fishing events.</p>
+                            <a href="guides/fishing-quests-guide.html">See fishing and quests <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="wiki-card home-card">
+                            <div class="home-card-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <h3>Homes &amp; warps</h3>
+                            <p>Save places to return to and browse destinations shared by players.</p>
+                            <a href="guides/travel-guide.html">Find your way around <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <article class="wiki-card home-card home-card-community">
+                            <div class="home-card-icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
+                            <h3>Play together</h3>
+                            <p>Read the server rules and find the community spaces where players meet.</p>
+                            <a href="pages/rules.html">Read the rules <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </div>
-			<!-- /.container -->
-        </div>
-        <hr>
-        <footer>
+            </section>
+
+            <section class="home-start" aria-labelledby="start-heading">
+                <div>
+                    <p class="home-eyebrow">New to Towny?</p>
+                    <h2 id="start-heading">Your first steps start here.</h2>
+                    <p>Learn how to join a town, create one of your own, and make your first claim.</p>
+                </div>
+                <a class="btn btn-info" href="guides/towny-guide.html">Get started <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </section>
+        </main>
+
+        <footer class="home-footer">
             <div class="container">
-                <div class="col-lg-12">
-                    <ul class="nav nav-pills right">  
-                        <ul class="nav nav-pills bottom">
-                        <li role="presentation"><a href="/pages/rules.html"><i class="fa fa-info-circle"></i></a></li>
-                        <li role="presentation"><a href="/pages/staff.html"><i class="fa fa-star"></i></a></li>
-                        <li role="presentation"><a href="/pages/vote.html"><i class="fa fa-check"></i></a></li>
-                        <li role="presentation"><a href="https://modermmc.enjin.com/shop"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>  
-                    <ul class="nav nav-pills right">             
-                        <li class="presentation"><a href="http://discord.modernmc.ca/"><i class="fab fa-discord"></i></a></li>
-                        <li class="presentation"><a href="https://www.youtube.com/channel/UC0aJPofvns-VGgAutvPu5rQ"><i class="fab fa-youtube"></i></a></li>
-                        <li class="presentation"><a href="https://www.instagram.com/moderntowny/"><i class="fab fa-instagram"></i></a></li>
-                        <li class="presentation"><a href="https://twitter.com/ModernTowny_MMC"><i class="fab fa-twitter"></i></a></li>
-                        <li class="pull-right">&copy; 2022 ModernMC</li>
-                    </ul> 
+                <a class="home-footer-brand" href="index.html">ModernMC</a>
+                <p>ModernMC Towny &middot; <a href="pages/guide.html">Player guides</a> &middot; <a href="http://discord.modernmc.ca/">Discord</a></p>
+                <p class="home-copyright">&copy; 2026 ModernMC</p>
             </div>
         </footer>
-    </div>
-        <!-- /.container -->
-        <!-- JavaScript -->
+
         <script src="assets/js/jquery-1.10.2.js"></script>
         <script src="assets/js/bootstrap.js"></script>
     </body>

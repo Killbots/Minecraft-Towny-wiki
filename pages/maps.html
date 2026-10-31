@@ -3,104 +3,60 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>ModernMC</title>
-        <link rel="ICON" href="/assets/img/server-icon.webp">
-        <!-- Bootstrap core CSS -->
-        <link href="/assets/css/bootstrap.css" rel="stylesheet">
-		<!-- MyMC CSS -->
-        <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/fontawesome-free-5.15.4-web/css/all.css">
-		<!-- FontAwesome CSS -->
-        <link href="/assets/css/mymc.css" rel="stylesheet">
+        <meta name="description" content="Browse maps for the ModernMC Minecraft worlds.">
+        <title>World Maps | ModernMC</title>
+        <link rel="icon" href="../assets/img/server-icon.webp">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../assets/css/mymc.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <!--server logo-->
-                    <a class="panel-title navbar-brand" href="/index.html">ModernMC</a>
-                    <a class="panel-title navbar-brand" href="/pages/guide.html">Maps</a>
+                    <a class="navbar-brand" href="../index.html">ModernMC</a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <ul class="nav navbar-nav navbar-right">
-                        <li ><a href="/guides/towny-guide.html" style="color: green;"><i class="fa fa-home"></i> Towny</a></li>
-                        <li><a href="rules.html" style="color:lightseagreen;"><i class="fa fa-info-circle"></i> Vanilla</a></li>
-                        <li><a href="Hardcore-guide.html" style="color:red;"><i class="fas fa-burn"> Hardcore</i></a></li>
-                    </ul>    
+                        <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="rules.html"><i class="fa fa-info-circle" aria-hidden="true"></i> Rules</a></li>
+                        <li><a href="guide.html"><i class="fa fa-book" aria-hidden="true"></i> Guides</a></li>
+                        <li class="active"><a href="maps.html"><i class="fa fa-globe" aria-hidden="true"></i> Maps</a></li>
+                        <li><a href="staff.html"><i class="fa fa-users" aria-hidden="true"></i> Staff</a></li>
+                        <li><a href="vote.html"><i class="fa fa-check" aria-hidden="true"></i> Vote</a></li>
+                        <li><a href="ModernMC_Shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+                        <li><a href="https://admin.modernmc.ca"><i class="fa fa-cog" aria-hidden="true"></i> Admin</a></li>
+                    </ul>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-    </nav>
-                
+        </nav>
+        <header class="jumbotron homepage-opening home-hero page-hero">
+            <div class="container text-center">
+                <p class="home-eyebrow">ModernMC Towny</p>
+                <h1 class="head">Explore the worlds</h1>
+                <p>Take a look around the Hardcore, Vanilla, and Towny maps.</p>
+            </div>
+        </header>
+        <main class="container page-content">
+            <p class="page-intro">Choose a world map. Map services are hosted separately from this website, so availability depends on the map server.</p>
+            <div class="maps-grid">
+                <article class="page-card map-card"><span class="map-icon"><i class="fa fa-fire" aria-hidden="true"></i></span><h3>Hardcore world</h3><p>Open the live map for the Hardcore world.</p><a class="btn btn-info" href="hardcoredynamp.html">Open Hardcore map <i class="fa fa-arrow-right" aria-hidden="true"></i></a></article>
+                <article class="page-card map-card"><span class="map-icon"><i class="fa fa-leaf" aria-hidden="true"></i></span><h3>Vanilla world</h3><p>Open the live map for the Vanilla world.</p><a class="btn btn-info" href="vanilladynmap.html">Open Vanilla map <i class="fa fa-arrow-right" aria-hidden="true"></i></a></article>
+                <article class="page-card map-card"><span class="map-icon"><i class="fa fa-home" aria-hidden="true"></i></span><h3>Towny world</h3><p>Open the live map for the Towny world.</p><a class="btn btn-info" href="townydynmap.html">Open Towny map <i class="fa fa-arrow-right" aria-hidden="true"></i></a></article>
+            </div>
+            <p class="map-notice">If a map does not load, its address or public access may need an update. The Towny map currently points to a private network address.</p>
+        </main>
+        <footer class="page-footer">
             <div class="container">
-                <div class="row text-center mc-items">
-                    <div class="col-md-5">
-						<div class="icon">
-                            <a href="hardcoredynmap.html"><img src="/assets/img/swords.webp"/></a>
-                        </div>
-                        <h2 class="head">Hardcore Server Map</h2>
-                        <p style="color: aqua;">Vanilla Minecraft Is like normal survival Minecraft but turned up, more mobs that are harder to kill! 
-                            <br /><br />
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="icon">
-                            <a href="/pages/vanilladynmap.html"><img src="/assets/img/vanilladynmap.webp"/></a>
-                        </div>
-                        <h2 class="head">Vanilla Map</h2>
-                        <p style="color: aqua;">Survival Minecraft is a game play where you need to collect all your resources to build, and survive from monsters
-                            <br /><br />
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="icon">
-                            <a href="/pages/townydynmap.html"><img src="/assets/img/townydynmap.webp" /></a>
-                        </div>
-                        <h2 class="head">Towny Map</h2>
-                        <p style="color: aqua;">The original Player-managed Protection within a resident/town/nation-hierarchy, is also the place to hang out collect MCmmo points, and hang out with people.
-                            <br /><br />
-                        </p>
-                    </div>
-                </div>
+                <a class="home-footer-brand" href="../index.html">ModernMC</a>
+                <p><a href="guide.html">Player guides</a> &middot; <a href="http://discord.modernmc.ca/">Discord</a></p>
+                <p class="home-copyright">&copy; 2026 ModernMC</p>
             </div>
-			<!-- /.container -->
-        </div>
-      
-            <hr>
-            <footer>
-                <div class="container">
-                    <div class="col-lg-12">
-                        <ul class="nav nav-pills right">  
-                            <ul class="nav nav-pills bottom">
-                            <li role="presentation"><a href="/pages/rules.html"><i class="fa fa-info-circle"></i></a></li>
-                            <li role="presentation"><a href="/pages/staff.html"><i class="fa fa-star"></i></a></li>
-                            <li role="presentation"><a href="/pages/vote.html"><i class="fa fa-check"></i></a></li>
-                            <li role="presentation"><a href="https://modermmc.enjin.com/shop"><i class="fa fa-shopping-cart"></i></a></li>
-                        </ul>  
-                        <ul class="nav nav-pills right">             
-                            <li class="presentation"><a href="http://discord.modernmc.ca/"><i class="fab fa-discord"></i></a></li>
-                            <li class="presentation"><a href="https://www.youtube.com/channel/UC0aJPofvns-VGgAutvPu5rQ"><i class="fab fa-youtube"></i></a></li>
-                            <li class="presentation"><a href="https://www.instagram.com/moderntowny/"><i class="fab fa-instagram"></i></a></li>
-                            <li class="presentation"><a href="https://twitter.com/ModernTowny_MMC"><i class="fab fa-twitter"></i></a></li>
-                            <li class="pull-right">&copy; 2022 ModernMC</li>
-                        </ul> 
-                </div>
-            </footer>
-        </div>
-        <!-- /.container -->
-        <!-- JavaScript -->
-        <script src="/assets/js/jquery-1.10.2.js"></script>
-        <script src="/assets/js/bootstrap.js"></script>
+        </footer>
+        <script src="../assets/js/jquery-1.10.2.js"></script>
+        <script src="../assets/js/bootstrap.js"></script>
     </body>
 </html>
