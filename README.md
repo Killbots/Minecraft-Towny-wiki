@@ -32,6 +32,10 @@ Keep commands, rewards, prices, plugin names, and item details aligned with the 
 - For a version update, open a pull request from `Dev` into `main` and review the changes before merging.
 - Keep deployment-only helpers and local files out of commits. The root `.gitignore` excludes `publish.sh`.
 
+## License
+
+The root [`LICENSE`](LICENSE) applies Apache-2.0 to original website code released under this project. It does not replace the separate licenses or notices for bundled third-party code and fonts, and it does not grant rights to third-party logos or artwork. Original guide text and custom artwork are not covered by this code license; they retain their existing rights unless a separate content license is added.
+
 ## Deployment
 
 See [`deploy/README.md`](deploy/README.md) for publishing the static files with NGINX, configuring the `modernmc.ca` host, and enabling HTTPS.
